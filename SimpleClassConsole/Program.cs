@@ -342,12 +342,11 @@ namespace SimpleClassConsole
         //methods
         public double GetTotalTime()
         {
-            double TotalTime = (FinishDate.GetYear() - StartDate.GetYear()) * 525600
-                 + (FinishDate.GetMonth() - StartDate.GetMonth()) * 43800 + (FinishDate.GetDay()
-                 - StartDate.GetDay()) * 24 + (FinishDate.GetHours() - StartDate.GetHours()) * 60 +
-                 (FinishDate.GetMinutes() - StartDate.GetMinutes());
-
-            return TotalTime;
+            DateTime startDate = new DateTime(StartDate.GetYear(), StartDate.GetMonth()
+                , StartDate.GetDay(), StartDate.GetHours(), StartDate.GetMinutes(), 0);
+            DateTime finishDate = new DateTime(FinishDate.GetYear(), FinishDate.GetMonth()
+                , FinishDate.GetDay(), FinishDate.GetHours(), FinishDate.GetMinutes(), 0);
+            return (finishDate - startDate).TotalMinutes;
         }
 
         public bool IsArrivingToday()
@@ -365,11 +364,12 @@ namespace SimpleClassConsole
         {
             Product Apple = new Product("Apple",0.3f,new Currency("$", 29), 50, "Yehor Ovseukov", 0.2f);
             
-            Airplane Mriya = new Airplane("Zytomir", "New York", new Date(23, 15, 43), new Date(15, 9, 30));
+            Airplane Mriya = new Airplane("Zytomir", "New York", new Date(2019, 6,23, 15, 43), new Date(2020, 12,15, 9, 30));
 
             Console.WriteLine(Apple.GetProducer() + " sell " + Apple.GetName() + " with " + 
                 Apple.GetPriceInUAH() + " price for each !");
             Console.WriteLine($"He fly on airplane form {Mriya.GetStartCity()} to {Mriya.GetFinishCity()}");
+            Console.WriteLine(Mriya.GetTotalTime());
             Console.ReadKey();
         }
     }
