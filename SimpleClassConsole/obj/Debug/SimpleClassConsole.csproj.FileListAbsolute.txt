@@ -1,0 +1,7 @@
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\bin\Debug\SimpleClassConsole.exe.config
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\bin\Debug\SimpleClassConsole.exe
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\bin\Debug\SimpleClassConsole.pdb
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\obj\Debug\SimpleClassConsole.csprojAssemblyReference.cache
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\obj\Debug\SimpleClassConsole.csproj.CoreCompileInputs.cache
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\obj\Debug\SimpleClassConsole.exe
+C:\Users\dizon\source\repos\OOP1\SimpleClassConsole\obj\Debug\SimpleClassConsole.pdb
